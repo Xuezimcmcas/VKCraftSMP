@@ -1,0 +1,31 @@
+name: VKCraftSMP
+version: '${project.version}'
+main: com.neteasemc.vkcraftsmp.VKCraftSMP
+depend: [Multiverse-Core]
+softdepend: [Multiverse-Core]
+description: A custom plugin for managing personal worlds and settings.
+commands:
+  smp:
+    description: 设置个人世界.
+    usage: /<command> [create|back|settings|help]
+    aliases: [ vkcraftsmp ]
+  settings:
+    description: 打开GUI菜单.
+    usage: /settings
+  接受:
+    description: 接受邀请
+    usage: /接受
+  拒绝:
+    description: 拒绝邀请
+    usage: /拒绝
+  邀请:
+    description: 邀请玩家到个人世界
+    usage: /邀请 [玩家名称]
+
+permissions:
+  vkcraftsmp.use:
+    description: Allows use of all VKCraftSMP commands.
+    default: true
+  vkcraftsmp.create:
+    description: 允许玩家创建自己的世界
+    default: op
